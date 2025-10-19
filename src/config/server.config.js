@@ -1,7 +1,7 @@
-/*import express from 'express';
+import express from 'express';
 import cors from 'cors';
 
-//import AppRoutes from '../config/server.routes'; // importa tus rutas globales
+import AppRoutes from '../config/server.routes'; // importa tus rutas globales
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use('/api', AppRoutes); // prefijo global: todas las rutas empiezan con /api
 
 import AppRoutes from './server.routes.js';
 
-//const app = express();
+const app = express();
 
 //Midleware
 app.use(cors());
@@ -29,4 +29,3 @@ app.use(AppRoutes);
 
 
 export default app;
-*/

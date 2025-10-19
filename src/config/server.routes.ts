@@ -14,18 +14,18 @@ router.get('/healthz', (_req, res) => res.json({ ok: true }));
 // /api/lab/*
 router.use('/lab', LabRoutes);
 
-//import HealthRoutes from '../modules/health/health.routes.js';
-//import CardsRoutes from "../Innosys/routes/card.routes.js";
-//import UsersRoutes from "../Innosys/routes/user.routes.js";
-//import PaymentRoutes from "../Innosys/routes/payment.routes.js";
+import HealthRoutes from '../modules/health/health.routes.js';
+import CardsRoutes from "../Innosys/routes/card.routes.js";
+import UsersRoutes from "../Innosys/routes/user.routes.js";
+import PaymentRoutes from "../Innosys/routes/payment.routes.js";
 
-//import HealthRoutes from '../modules/health/health.routes';
-//import CardsRoutes from "../Innosys/routes/card.routes";
-//import UsersRoutes from "../Innosys/routes/user.routes";
-//import PaymentRoutes from "../Innosys/routes/payment.routes";
+import HealthRoutes from '../modules/health/health.routes';
+import CardsRoutes from "../Innosys/routes/card.routes";
+import UsersRoutes from "../Innosys/routes/user.routes";
+import PaymentRoutes from "../Innosys/routes/payment.routes";
 
 
-//const router = Router();
+const router = Router();
 
 // Debug: mostrar rutas registradas
 
@@ -34,7 +34,7 @@ import UsersRoutes from "../Innosys/routes/user.routes";
 import PaymentRoutes from "../Innosys/routes/payment.routes";
 import CashPayRoutes from '../Innosys/routes/lab/cashpay.routes';
 
-//const router = Router();
+const router = Router();
 
 // Middleware de debug para ver todas las peticiones
 
